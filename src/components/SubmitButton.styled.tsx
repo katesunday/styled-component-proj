@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { MyTheme } from '../styles/Theme.styled'
+import {ButtonAnimation} from "../styles/animations/ButtonAnimation";
 
 type SubmitButtonStyledPropsType = {
   primary?: boolean
@@ -24,5 +25,6 @@ export const SubmitButton = styled.button<SubmitButtonStyledPropsType>`
 
   &:hover {
     cursor: pointer;
+    animation: ${ButtonAnimation} .5s ease-in-out forwards;
   }
 `
